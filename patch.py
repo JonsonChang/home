@@ -2,7 +2,8 @@ import subprocess
 import shutil
 import os
 
-src_base = '/home/jonson/ax-managetools/src/'
+VERSION = '3.5'
+src_base = '/home/jonson/arkflex{version}/ax-managetools/src/'.format(version=VERSION)
 dist_base = '/data/patch/usr/lib/python2.7/dist-packages'
 
 
@@ -14,11 +15,18 @@ def execvp(cmd):
     else:
         return (True, stdout_data)
 
+def rm_link(file):
+    try:
+        os.unlink(file)
+    except:
+        print "rm_link except:" + file 
+        pass
 
 def patch(src, dist):
     try:
         shutil.rmtree(dist)
     except:
+        print "rmtree except:" + dist
         pass
     shutil.copytree(src, dist, symlinks=True)
 
@@ -34,26 +42,27 @@ src = os.path.join(src_base, "ManageServices")
 dist = os.path.join(dist_base, "ManageServices")
 patch(src, dist)
 
-os.unlink('/data/patch/usr/lib/python2.7/dist-packages/ManageTools/arkexport_tools')
-os.unlink('/data/patch/usr/lib/python2.7/dist-packages/ManageTools/ManageTools')
+rm_link('/data/patch/usr/lib/python2.7/dist-packages/ManageTools/arkexport_tools')
+rm_link('/data/patch/usr/lib/python2.7/dist-packages/ManageTools/ManageTools')
 
 
 # patch web
-src = os.path.join("/home/jonson/ax-backend/UI")
+src = os.path.join("/home/jonson/arkflex{version}/ax-backend/UI".format(version=VERSION))
 dist = os.path.join("/data/patch/var/www/axui/")
 patch(src, dist)
-src = os.path.join("/home/jonson/ax-backend/UI/UI/static")
+src = os.path.join("/home/jonson/arkflex{version}/ax-backend/UI/UI/static".format(version=VERSION))
 dist = os.path.join("/data/web/static")
 patch(src, dist)
-os.unlink('/data/patch/var/www/axui/arkexport_tools')
-os.unlink('/data/patch/var/www/axui/ManageTools')
+rm_link('/data/patch/var/www/axui/arkexport_tools')
+rm_link('/data/patch/var/www/axui/ManageTools')
 # for current web env
 os.system('cp -R /data/patch/var/www/axui/ /var/www/')
-os.unlink('/var/www/axui/arkexport_tools')
-os.unlink('/var/www/axui/ManageTools')
+rm_link('/var/www/axui/arkexport_tools')
+rm_link('/var/www/axui/ManageTools')
 os.system('service apache2 restart')
 
-src = '/home/jonson/ax-managetools/configuration/etc/init/hopebay-dfs.conf'
+# dfs upstart
+src = '/home/jonson/arkflex{version}/ax-managetools/configuration/etc/init/hopebay-dfs.conf'.format(version=VERSION)
 dist = '/etc/init/hopebay-dfs.conf'
 shutil.copyfile(src, dist)
 
