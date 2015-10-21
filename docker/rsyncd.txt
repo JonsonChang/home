@@ -1,0 +1,13 @@
+https://hub.docker.com/r/thomfab/docker-rsyncd/
+
+
+docker pull thomfab/docker-rsyncd
+
+
+docker run -d -p 873:873  \
+              -e VOLUME="volum" \
+               -v /home/jonson/volume:/volume \
+              thomfab/docker-rsyncd
+              
+              
+≥]©w¿…¶b°G /etc/rsyncd.conf
