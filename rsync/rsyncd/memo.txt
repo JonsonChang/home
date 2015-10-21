@@ -1,0 +1,3 @@
+rsync --no-detach --daemon --config /home/jonson/github/home/rsync/rsyncd/rsyncd.conf
+
+
