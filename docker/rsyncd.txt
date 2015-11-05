@@ -10,4 +10,8 @@ docker run -d -p 873:873  \
               thomfab/docker-rsyncd
               
               
-�]�w�ɦb�G /etc/rsyncd.conf
+設定檔在： /etc/rsyncd.conf
+
+查現有volum
+rsync rsync://[USER@]HOST[:PORT]/DEST
+rsync rsync://confsync@172.16.20.91/
