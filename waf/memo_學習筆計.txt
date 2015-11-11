@@ -1,0 +1,24 @@
+https://waf.io/book/
+
+waf configure
+    top = '.'
+    out = 'build_directory'
+    會在 out 目錄中產生configure暫存檔，及  .lock-waf_linux2_build
+    
+waf distclean
+    remove build directory and the lock file
+    
+waf clean build -v
+        -v 會顯示 command line
+
+waf -j3
+    multithread build code
+        
+3.3.3. More build commands
+The following commands all use the same function build from the wscript file:
+    build: process the source code to create the object files
+    clean: remove the object files that were created during a build (unlike distclean, do not remove the configuration)
+    install: check that all object files have been generated and copy them on the system (programs, libraries, data files, etc)
+    uninstall: undo the installation, remove the object files from the system without touching the ones in the build directory
+    list: list the task generators in the build section (to use with waf --targets=name)
+    step: force the rebuild of particular files for debugging purposes        
