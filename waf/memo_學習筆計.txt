@@ -22,3 +22,11 @@ The following commands all use the same function build from the wscript file:
     uninstall: undo the installation, remove the object files from the system without touching the ones in the build directory
     list: list the task generators in the build section (to use with waf --targets=name)
     step: force the rebuild of particular files for debugging purposes        
+    
+
+各種C 語言的build 法    
+   def build(bld):
+       bld.program(source='main.c', target='app', use='myshlib mystlib') 2
+       bld.stlib(source='a.c', target='mystlib') 3
+       bld.shlib(source='b.c', target='myshlib', use='myobjects') 4
+       bld.objects(source='c.c', target='myobjects')    
