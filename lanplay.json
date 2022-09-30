@@ -1,0 +1,71 @@
+-{
+  "ver": 202204101142,
+  "data": [
+    {
+      "comment": "贵州-华为云(云服务器)",
+      "ip": "lanplay.f-ever.cn",
+      "port": 11451,
+      "flag": "cn"
+    },
+    {
+      "comment": "北京-电信(企业专线)",
+      "ip": "ns.ix.tc",
+      "port": 11451,
+      "flag": "cn"
+    },
+    {
+      "comment": "广东广州-腾讯云(云服务器)",
+      "ip": "119.91.140.131",
+      "port": 11451,
+      "flag": "cn"
+    },
+    {
+      "comment": "上海-华为云(云服务器)",
+      "ip": "122.112.171.104",
+      "port": 11451,
+      "flag": "cn"
+    },
+    {
+      "comment": "上海-腾讯云(云服务器)",
+      "ip": "124.223.87.139",
+      "port": 11451,
+      "flag": "cn"
+    },
+    {
+      "comment": "四川成都-腾讯云(云服务器)",
+      "ip": "139.155.72.235",
+      "port": 11451,
+      "flag": "cn"
+    },
+    {
+      "comment": "福建泉州-移动(云服务器)",
+      "ip": "cloud.muxinsq.com",
+      "port": 10182,
+      "flag": "cn"
+    },
+    {
+      "comment": "广东深圳-阿里云(云服务器)",
+      "ip": "www.jugaojc.com",
+      "port": 11451,
+      "flag": "cn"
+    },
+    {
+      "comment": "河南郑州-联通(家庭宽带)",
+      "ip": "srv.jaxlewis.top",
+      "port": 11451,
+      "flag": "cn"
+    },
+    {
+      "comment": "浙江宁波-电信(家庭宽带)",
+      "ip": "wang54188.iask.in",
+      "port": 11451,
+      "flag": "cn"
+    },
+    {
+      "comment": "US 01(云服务器)",
+      "ip": "joinsg.net",
+      "port": 11453,
+      "flag": "us"
+    }
+  ]
+}
