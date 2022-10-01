@@ -1,5 +1,5 @@
 {
-  "ver": 202204101144,
+  "ver": 202204101145,
   "data": [
     {
       "comment": "001",
@@ -445,6 +445,7 @@
     "type": "rust"
   },
   {
+    "comment": "000-cpalm1",
     "ip": "lp1.cpalm.org",
     "port": 11451,
     "flag": "tw",
@@ -452,6 +453,7 @@
     "type": "rust"
   },
   {
+    "comment": "000-cpalm2",
     "ip": "lp2.cpalm.org",
     "port": 11456,
     "flag": "tw",
