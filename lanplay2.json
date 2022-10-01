@@ -1,6 +1,22 @@
 {
   "ver": 202204101145,
   "data": [
+  {
+      "comment": "000-cpalm1",
+      "ip": "lp1.cpalm.org",
+      "port": 11451,
+      "flag": "tw",
+      "platform": "switch",
+      "type": "rust"
+    },
+    {
+      "comment": "000-cpalm2",
+      "ip": "lp2.cpalm.org",
+      "port": 11456,
+      "flag": "tw",
+      "platform": "switch",
+      "type": "rust"
+    },    
     {
       "comment": "001",
       "ip": "119.6.232.193",
@@ -443,23 +459,7 @@
     "flag": "jp",
     "platform": "switch",
     "type": "rust"
-  },
-  {
-    "comment": "000-cpalm1",
-    "ip": "lp1.cpalm.org",
-    "port": 11451,
-    "flag": "tw",
-    "platform": "switch",
-    "type": "rust"
-  },
-  {
-    "comment": "000-cpalm2",
-    "ip": "lp2.cpalm.org",
-    "port": 11456,
-    "flag": "tw",
-    "platform": "switch",
-    "type": "rust"
-  },
+  },  
   {
     "ip": "edgymin.ga",
     "port": 11451,
