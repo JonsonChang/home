@@ -1,5 +1,5 @@
 {
-  "ver": 202204101145,
+  "ver": 202204101155,
   "data": [
   {
       "comment": "000-cpalm1",
@@ -18,34 +18,40 @@
       "type": "rust"
     },    
     {
+      "comment": "aya0",
+      "ip": "aya0.top",
+      "port": 11451,
+      "flag": "cn"
+    },
+    {
       "comment": "001",
       "ip": "119.6.232.193",
       "port": 11451,
-      "flag": "tw"
+      "flag": "cn"
     },
     {
       "comment": "002",
       "ip": "124.221.52.85",
       "port": 11451,
-      "flag": "tw"
+      "flag": "cn"
     },
     {
       "comment": "003",
       "ip": "159.75.87.168",
       "port": 11451,
-      "flag": "tw"
+      "flag": "cn"
     },
     {
       "comment": "004",
       "ip": "124.223.203.187",
       "port": 11451,
-      "flag": "tw"
+      "flag": "cn"
     },
     {
       "comment": "005",
       "ip": "177040122.xyz",
       "port": 11451,
-      "flag": "tw"
+      "flag": "cn"
     },
     {
       "comment": "贵州-华为云(云服务器)",
